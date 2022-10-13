@@ -1,0 +1,32 @@
+@import '_null.scss';
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parent {
+	text-align: center;
+}
+#parent > * {
+	margin-bottom: 10px;
+}
+
+#timer {
+	font-size: 18px;
+}
+#text {
+	font-size: 17px;
+	font-style: italic;
+}
+
+button {
+	padding: 5px 10px;
+	font-size: 15px;
+	cursor: pointer;
+}
+button:not(.active) {
+	display: none;
+}
